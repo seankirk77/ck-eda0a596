@@ -1,14 +1,83 @@
-{"title":"Sean checklist — Oct 12, 2026","items":[
-"Dallas hotel Oct 20-22 (Sleep Inn $201, free cancel to Oct 19)",
-"Board memos + DTF printer downtime log due Oct 18",
-"G6070 decision (rebate ends Oct 30 noon ET)",
-"Quicksilver + Hyatt cancel, waiting on attorney",
-"Wheeled robot: Feather pick + book call?",
-"Final bios sign-off + extra Facebook profile",
-"YouTube access for rosey@ (which login owns @PrintHybrid?)",
-"McKesson strep kit $46",
-"Apple Reminders setup for bots",
-"Board routine rewrite (bots drop memos before meeting)",
-"TikTok/Instagram/X emails moved to rosey@",
-"Outbound sales call list",
-"Correction audit proposals"]}
+{
+ "title": "Sean checklist — Oct 12, 2026",
+ "items": [
+  {
+   "text": "Dallas hotel Oct 20-22",
+   "summary": "You fly LBB→DAL Tue Oct 20 and get home Thu Oct 22 at 10:30 PM, and no hotel is booked yet. Top budget pick: Sleep Inn Love Field–Medical District, $201 for both nights with tax, free parking and breakfast, about 9 min from the Anatole.",
+   "rec": "Book the Sleep Inn now. It's free to cancel until Oct 19, so there's no risk in locking it in.",
+   "rec_status": "do"
+  },
+  {
+   "text": "Board memos + DTF downtime log (due Oct 18)",
+   "summary": "The board seats' memos are due Sun Oct 18. The DTF downtime log (board/coo-dtf-downtime-log.md) still has zero entries, and the G6070 decision depends on it.",
+   "rec": "Have the crew log every Quatro downtime/reprint starting this week. Rosey will chase the seat memos.",
+   "rec_status": "do"
+  },
+  {
+   "text": "G6070 printer decision",
+   "summary": "Epson G6070 DTF printer ($14,995 MSRP) vs keeping the two Quatros. Quatro hard costs over about 6 months come to $4,947. The Grimco/dealer $1,500 rebate ends Oct 30 at noon ET.",
+   "rec": "Hold for now, per the board: don't buy until there are at least 2 weeks of real downtime data. Rosey will remind you around Oct 23.",
+   "rec_status": "drop"
+  },
+  {
+   "text": "Quicksilver card + Hyatt cancel",
+   "summary": "Switch to Capital One Quicksilver ($0 fee, 1.5% cash back) with Trish as Account Manager, and cancel the Hyatt cards. Trish is OK with it. It's waiting on the attorney.",
+   "rec": "Wait for the attorney's OK. Tap Do it once they've cleared it and Rosey will handle the apply/cancel steps.",
+   "rec_status": null
+  },
+  {
+   "text": "Wheeled robot: Feather + book call",
+   "summary": "Research ranked Feather (feather.dev, about $29,990 promo, ships today) as the best wheeled two-arm robot. Nobody publishes a verified garment-task speed, and the 15-min call with Hoa was never booked.",
+   "rec": "Pick Feather and book the call, but ask for a timed dryer-unload demo before you commit to anything.",
+   "rec_status": "do"
+  },
+  {
+   "text": "Bios sign-off + extra Facebook profile",
+   "summary": "Four final bios for you and Print Hybrid are ready to paste. There's also a stray second \"Print Hybrid\" Facebook profile (2 followers, profile.php?id=61574998255419).",
+   "rec": "Approve the bios. Confirm whether that profile is ours so it can be deleted or merged.",
+   "rec_status": "do"
+  },
+  {
+   "text": "YouTube @PrintHybrid owner login",
+   "summary": "To add rosey@printhybrid.com as a Manager on the @PrintHybrid channel, someone has to sign in with the channel's owner account. We don't know which Google login owns it.",
+   "rec": "Tell Rosey in the note which email owns the channel, or sign in once so rosey@ can be added.",
+   "rec_status": "do"
+  },
+  {
+   "text": "McKesson Strep A kit, $46",
+   "summary": "McKesson Consult Strep A dipstick, 25 tests, $46 (list $75.95) at Mountainside Medical, no license required. 97%/95% accuracy per the insert. Not sold on Amazon.",
+   "rec": "Order it if you still want a kit in the house. It's the cheapest 25-pack found.",
+   "rec_status": "do"
+  },
+  {
+   "text": "Apple Reminders CLI on Mac",
+   "summary": "Set up remindctl on your Mac so bots can add and read Apple Reminders for you. Rosey didn't find a file with more detail on this offer.",
+   "rec": "Only worth doing if you want bots dropping reminders on your phone. Otherwise drop it.",
+   "rec_status": null
+  },
+  {
+   "text": "Board routine rewrite",
+   "summary": "Rewrite the Monday Board routine so it actually wakes each seat and they drop memos before the meeting. At the first meeting (Oct 12), every voting seat was absent.",
+   "rec": "Approve. Without it, the board meetings are just the chair talking to itself.",
+   "rec_status": "do"
+  },
+  {
+   "text": "Move social account emails to rosey@",
+   "summary": "IG, X and the FB Page already use rosey@printhybrid.com. TikTok can only be changed in the mobile app, and the IG/X confirmation emails were never clicked.",
+   "rec": "Spend 2 minutes in the TikTok app and change the email to rosey@. Rosey will handle the confirmation emails.",
+   "rec_status": "do"
+  },
+  {
+   "text": "Outbound sales call list",
+   "summary": "The Outbound Sales Bot needs its first dial list: cold local businesses, warm leads that went quiet, past customers due for reorder, or PrintFlow quote follow-ups. Open since Sep 16.",
+   "rec": "Start with past customers due for reorder. Warm accounts convert fastest. (This is Rosey's suggestion, not tested.)",
+   "rec_status": "do"
+  },
+  {
+   "text": "Correction audit proposals (T6–T17)",
+   "summary": "Twelve proposed rules for how Rosey works, from the Oct 3 audit. Examples: one task at a time + ping when done, verify before claiming, chat only Sean+Rosey. T1–T5 were applied Oct 3.",
+   "rec": "Approve them all, and note any you object to.",
+   "rec_status": "do"
+  }
+ ]
+}
