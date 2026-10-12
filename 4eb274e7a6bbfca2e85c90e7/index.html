@@ -40,6 +40,6 @@ document.getElementById('go').onclick=async()=>{
   items:rows.map((r,i)=>({n:i+1,text:items[i].text,status:(r.querySelector('button.on')||{}).dataset?.v||null,note:r.querySelector('textarea').value.trim()}))};
  g.disabled=true;m.textContent='Sending…';
  try{const r=await fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();
-  if(!r.ok)throw Error(j.error||r.status);m.textContent='✅ Sent to Rosey (#'+j.id+')'}catch(e){m.textContent='❌ Failed: '+e.message+' — try again';g.disabled=false}};
+  if(!r.ok)throw Error(j.error||r.status);m.textContent=(/^HTTP 2/.test(j.rosey_webhook)?'✅ Sent to Rosey':'✅ Saved for Rosey')+' (#'+j.id+')'}catch(e){m.textContent='❌ Failed: '+e.message+' — try again';g.disabled=false}};
 load().catch(e=>document.getElementById('h').textContent='Could not load list: '+e.message);
 </script></body></html>
