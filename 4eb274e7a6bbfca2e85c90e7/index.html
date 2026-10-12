@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><title>Checklist</title>
+<style>
+:root{color-scheme:light dark}*{box-sizing:border-box}
+body{font:16px/1.4 -apple-system,system-ui,sans-serif;margin:0;padding:12px 12px 40px;background:#f3f4f6;color:#111}
+@media(prefers-color-scheme:dark){body{background:#111;color:#eee}.row{background:#1c1c1e!important;border-color:#333!important}textarea{background:#2c2c2e;color:#eee;border-color:#444}}
+h1{font-size:20px;margin:4px 0 12px}.row{background:#fff;border:1px solid #ddd;border-radius:12px;padding:12px;margin:0 0 10px}
+.t{font-weight:600;margin-bottom:8px}.n{color:#888;margin-right:4px}.b{display:flex;gap:6px;margin-bottom:8px}
+.b button{flex:1;min-height:44px;border-radius:10px;border:1px solid #bbb;background:transparent;color:inherit;font-size:15px}
+.b button.on[data-v=do]{background:#2563eb;color:#fff;border-color:#2563eb}.b button.on[data-v=done]{background:#16a34a;color:#fff;border-color:#16a34a}.b button.on[data-v=drop]{background:#6b7280;color:#fff;border-color:#6b7280}
+textarea{width:100%;min-height:44px;font-size:16px;border-radius:10px;border:1px solid #ccc;padding:8px;resize:vertical}
+#go{width:100%;min-height:52px;font-size:18px;font-weight:600;border:0;border-radius:12px;background:#111;color:#fff;margin-top:6px}
+@media(prefers-color-scheme:dark){#go{background:#eee;color:#111}}#msg{margin-top:10px;font-weight:600}.test{background:#fde68a;color:#000;padding:6px 10px;border-radius:8px;margin-bottom:10px}
+</style></head><body><h1 id="h">Loading…</h1><div id="tb"></div><div id="list"></div>
+<button id="go" hidden>Submit</button><div id="msg"></div>
+<script>
+const ENDPOINT='https://pqnlmtbliezpjibvtlat.supabase.co/functions/v1/checklist-submit';
+const q=new URLSearchParams(location.search),isTest=q.get('test')==='1';
+let listId='',title='Checklist',items=[];
+function b64(s){s=s.replace(/-/g,'+').replace(/_/g,'/');return decodeURIComponent(escape(atob(s)))}
+async function load(){
+ if(q.get('data')){const d=JSON.parse(b64(q.get('data')));listId=d.id||'inline';title=d.title||title;items=d.items}
+ else if(q.get('items')){items=q.get('items').split('|');listId=q.get('id')||'inline';title=q.get('title')||title}
+ else{const l=q.get('list')||'2026-10-12';const u=/^https:/.test(l)?l:'lists/'+encodeURIComponent(l)+'.json';
+  const d=await (await fetch(u,{cache:'no-store'})).json();listId=d.id||l;title=d.title||title;items=d.items}
+ items=items.map(x=>typeof x==='string'?{text:x}:x);if(q.get('only'))items=items.slice(0,+q.get('only'));
+ document.title=title;document.getElementById('h').textContent=(isTest?'TEST — ':'')+title;
+ if(isTest)document.getElementById('tb').innerHTML='<div class="test">TEST MODE — submission will be marked TEST</div>';
+ const L=document.getElementById('list');
+ items.forEach((it,i)=>{const r=document.createElement('div');r.className='row';r.innerHTML=
+  `<div class="t"><span class="n">${i+1}.</span><span></span></div><div class="b"><button data-v="do">Do it</button><button data-v="done">Done</button><button data-v="drop">Drop</button></div><textarea placeholder="Note"></textarea>`;
+  r.querySelector('.t span:last-child').textContent=it.text;
+  r.querySelectorAll('button').forEach(bt=>bt.onclick=()=>{const on=bt.classList.contains('on');r.querySelectorAll('button').forEach(x=>x.classList.remove('on'));if(!on)bt.classList.add('on')});
+  L.appendChild(r)});
+ document.getElementById('go').hidden=false}
+document.getElementById('go').onclick=async()=>{
+ const rows=[...document.querySelectorAll('.row')],m=document.getElementById('msg'),g=document.getElementById('go');
+ const body={list_id:listId,title:(isTest?'TEST — ':'')+title,test:isTest,submitted_at:new Date().toISOString(),
+  items:rows.map((r,i)=>({n:i+1,text:items[i].text,status:(r.querySelector('button.on')||{}).dataset?.v||null,note:r.querySelector('textarea').value.trim()}))};
+ g.disabled=true;m.textContent='Sending…';
+ try{const r=await fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();
+  if(!r.ok)throw Error(j.error||r.status);m.textContent='✅ Sent to Rosey (#'+j.id+')'}catch(e){m.textContent='❌ Failed: '+e.message+' — try again';g.disabled=false}};
+load().catch(e=>document.getElementById('h').textContent='Could not load list: '+e.message);
+</script></body></html>
