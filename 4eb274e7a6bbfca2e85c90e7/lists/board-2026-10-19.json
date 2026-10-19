@@ -1,0 +1,40 @@
+{
+ "title": "Board decisions — Mon Oct 19, 2026",
+ "items": [
+  {
+   "text": "Lead inbox fix: shared alias, Shelby first, sean@ backup after 5 PM",
+   "summary": "COO, Recon, Marketing and Devil's Advocate all back it (4 of 6 voting seats). Every lead inbox forwards to one shared alias. Shelby answers same day, a price goes out within 24 hours, art comes in by link or the website upload, and anything still open at 5 PM copies to sean@. Our own mystery-shop got a reply in 4 minutes but a price after about 5 days, and Yelp has 6 unopened items.",
+   "rec": "Do it. A bot sets up the alias and forwarding rules and test-mails each inbox; you only tell Shelby the new rule."
+  },
+  {
+   "text": "Move the X and TikTok recovery email off sales@",
+   "summary": "sales@ is still the recovery email for X and TikTok, so whoever runs sales@ can take over those accounts. Devil's Advocate flagged it as a single point of failure.",
+   "rec": "Do it. A bot changes it to sean@printhybrid.com in your signed-in browser."
+  },
+  {
+   "text": "Call Oliver & Otis before Dallas",
+   "summary": "They spent $47,890.76 last holiday season (last order 2025-10-30) and have no 2026 order. That is 79% of the $60,816.15 holiday gap. Holiday production slots are filling. Source: print-hybrid/holiday-reorder-gap-2026.md.",
+   "rec": "Do it today. You're in Dallas Oct 20–22."
+  },
+  {
+   "text": "OK the reorder notes to the other 14 holiday customers",
+   "summary": "14 past holiday customers worth about $12,925 combined have no 2026 order. Corrected drafts have been ready since Oct 14 and nothing has gone out. COO proposes Shelby sends handwritten-note photos with your yes on each text.",
+   "rec": "Do it. Drafts go to you one at a time for a yes; nothing sends without it."
+  },
+  {
+   "text": "Explain the $18.9K Visa jump (hold on any G6070 order)",
+   "summary": "The SWA Visa 1792 balance went from $36,056.51 (Oct 10) to $54,979.24 (Oct 18). Card debt is about $78.7K against about $75.8K cash. The board holds any G6070 order (Grimco quote about $23.5K, rebate ends Oct 30, quote expires Nov 3) until this is explained and you pick cash or financing.",
+   "rec": "Leave a note with what the charges were, or mark Do it and CFO connects the card feed to find out."
+  },
+  {
+   "text": "Red Folder couples-pack pilot, $62",
+   "summary": "Ideas wants 20 hand-made $3.99 packs sold at Lubbock bars on Oct 23 and 30, killed if fewer than 10 sell. A 500-pack run only gets quoted after 10 venues prepay. Devil's Advocate's condition: count only sales to strangers, not staff or friends.",
+   "rec": "Do it with the strangers-only count."
+  },
+  {
+   "text": "Was the Aug 17 Moscow Instagram login you?",
+   "summary": "Instagram flagged a \"Was this you?\" login from Moscow on Aug 17 for @printhybrid. It's still unconfirmed (social-media/watch-log.md, Oct 9).",
+   "rec": "Done if it was you. Otherwise mark Do it and a bot resets the password and checks logged-in devices."
+  }
+ ]
+}
