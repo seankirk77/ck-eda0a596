@@ -1,0 +1,35 @@
+{
+ "title": "Board decisions — Mon Oct 26, 2026",
+ "items": [
+  {
+   "text": "G6070: let the Oct 30 rebate lapse",
+   "summary": "COO, CFO, Devil's Advocate and Doc (4 of 6) vote no on the roughly $21K deposit for now. Nothing on disk yet shows Epson's written printhead coverage, on-site Lubbock service, or a quality test or owner calls. QuickBooks shows checking at -$2,258.91 posted, but the bank feed hasn't been refreshed since 10/19. If you buy later, the board wants one Quatro kept through peak, not an even swap.",
+   "rec": "Do it (let it lapse) unless Epson's written answer lands before Thursday."
+  },
+  {
+   "text": "OK the 24-hour lead follow-up email",
+   "summary": "COO, Recon and Devil's Advocate back it. After the instant 'need more info' reply, one nudge goes out 24 business hours later, only if the lead hasn't answered and nobody on our side has either. One nudge per lead, ever. Our test lead took about 120 hours from form to price. Draft text: print-hybrid/outbound/lead-24h-nudge-DRAFT-20261019.md.",
+   "rec": "Do it. A bot builds it and sends you the final text for one more yes before it goes live."
+  },
+  {
+   "text": "Retire the 5-minute checklist poll once Submit wakes Rosey",
+   "summary": "The poll runs about 1,344 times a week only because the Submit webhook key isn't set. Rosey and Doc set the key and prove one Submit wakes Rosey first; then the poll gets deleted.",
+   "rec": "Do it, after the test Submit works."
+  },
+  {
+   "text": "Fix the Facebook bio minimums",
+   "summary": "Facebook still says 'No minimums on DTF', but the minimum is 12. Instagram already reads 'DTF 12+ | Screen & hybrid 48+'. Marketing would make Facebook match.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Sign TikTok back in on the box",
+   "summary": "TikTok has been signed out since about Oct 21, so nobody is checking its DMs. Signing in needs you once on the box browser.",
+   "rec": "Do it. Rosey sets the box up so it's one sign-in for you."
+  },
+  {
+   "text": "LBKx806 mockups: Haboob Season and Cotton Gin No. 806",
+   "summary": "Ideas found zero listings for haboob and only 3 of 864 local listings with dust or weather themes. Local brand tees sell for $32 to $38. It's mockups only, with no spend, and only after a one-line licensing check so nothing uses Double T, Guns Up or scarlet and black.",
+   "rec": "Do it, mockups only."
+  }
+ ]
+}
