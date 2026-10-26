@@ -1,0 +1,65 @@
+{
+ "title": "Rules from last week's corrections — Mon Oct 26, 2026",
+ "items": [
+  {
+   "text": "Email goes out from Rosey's inbox only, never sean@",
+   "summary": "On 10/25 Rosey sent the espresso-martini list from sean@ to sean@ and made you press Send on a card. The mail rules already said rosey@ only, so this was a slip, not a gap. Rule for every bot that sends mail: send from its own or Rosey's inbox, never sean@, and no draft cards for mail addressed to you. Goes in the fleet rules (TEMPLATE.md) and outgoing-mail-rules.md.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Check every shopping link opens before sending it",
+   "summary": "On 10/25 one of the Amazon pod links you clicked was a 404. Rule: before any product or shopping link goes out, each URL gets opened and checked, and dead ones get replaced or dropped. Goes in the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Logins: check the Vault first, and always Save to Vault",
+   "summary": "Two corrections on 10/25. Rosey asked you to reconnect Gmail without checking the Vault first, and then two login forms landed as use-once instead of saved. You said 'make that a rule.' Rule: before any login ask, check what the Vault already holds and say so; every login form uses Save to Vault, never use-once. Already in memory; this makes it a fleet rule.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Usage burn chases 100% of the weekly meter",
+   "summary": "On 10/26 you said 50% with this much week left wasn't what you asked for. The Usage burn pace skill and the burn routine were already changed this morning: chase about 100% by the Friday reset, fire burn work whenever usage is behind a straight line to 100%, check three times each weekday, and stop starting new work only near 95%. This just confirms it as a standing rule.",
+   "rec": "Do it (keep what's already saved)."
+  },
+  {
+   "text": "Professor lesson standards (7 corrections)",
+   "summary": "1) No paid API credits: Grok Imagine visuals plus free voice. 2) Visuals must teach (diagrams, labeled steps), no filler clips. 3) Narration in one pass so the voice sounds the same throughout. 4) AI, agents and connectors come first in the topic order. 5) Videos must play on a phone turned sideways: 720p, phone-safe encoding, under about 10 MB. 6) No quizzes in videos or chat. 7) Delivery message is just the day, date, two sentences max, and the video. All of this goes on Professor's job card. Note that video playback got corrected twice (10/21 and 10/25).",
+   "rec": "Do it."
+  },
+  {
+   "text": "Dad Life: fix what you have, and do the research itself",
+   "summary": "Four Echo corrections on 10/25. It pushed new bedside clocks when you wanted the Echo Dots fixed. It offered only old hardware when you meant the newest Echo Spot. It said to wait for someone else's unlock ('why are you being lazy'). And it called the volume buttons 'knobs' without saying where Routines get built or offering to build them. Rule for its card: improve the gear you already own first, aim at the newest model, do original research instead of waiting, and build Alexa Routines itself. The waiting one repeats the do-it-yourself rule you already approved.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Printavo is going away: use PrintFlow",
+   "summary": "On 10/25 a burn job pulled from Printavo because the burn list still named it. You said Printavo is gone within about a week. Rule: no bot uses Printavo as a data source or plan for Print Hybrid; use PrintFlow for order history, reprints and seasonal pulls. Goes in the fleet rules and the burn list.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Site Rebuild sells a handoff package, not Stitch or Netlify",
+   "summary": "Your 10/25 pivot. The default deliverable becomes a static site zip, an AI SEO pack, a sales-audit PDF and a host handoff note. Hosting is optional at $99/mo only if the customer asks. Setup is $1,997 ($1,497 starter, $2,497 multi-location). Sends and spend still need your yes. Goes on Site Rebuild's job card and replaces the Netlify path in TEAM.md.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Website: fix the phone nav before adding new buttons",
+   "summary": "On 10/25 you rejected all five 'grandma' previews (new sticky bars and quote buttons). The real bug is that the phone menu doesn't scroll, so Quote and the phone number at the bottom can't be reached. Rule: fix how people reach the existing nav buttons before adding new ones, and show a preview before any HOLD PR. Goes on PrintHybrid Website's card.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Cross-check contacts against several sources, never a sample",
+   "summary": "On 10/23 you said to cross-reference contacts and 'just do the extra work.' Rule: every contact or data list gets checked against several sources (emails, signatures, the company's own site), every entry, before it's reported. The 10/25 web check of 227 contacts already worked this way. Goes in the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Throttle bulk Gmail and API reads",
+   "summary": "On 10/23 a bot pushed Gmail too hard. Rule: bulk reads use small batches with pauses, back off at the first quota warning, and pick up later. Goes in the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Never print secrets",
+   "summary": "Comes from the 10/22 X security sweep, not a direct correction from you. Rule: no bot runs commands that dump environment variables or prints any key or password. Secrets get mentioned by name only. Goes in the fleet rules.",
+   "rec": "Do it."
+  }
+ ]
+}

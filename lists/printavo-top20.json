@@ -1,0 +1,125 @@
+{
+ "title": "Printavo top 20 Canny ideas vs PrintFlow — Oct 12, 2026",
+ "items": [
+  {
+   "text": "#1 Garment check-in system (526 votes) — Have",
+   "summary": "Canny: complete, 526 votes. Need some type of designation for when a job's garments has been delivered by UPS (\"boxes in\") and then a system to check garments in to con PrintFlow: Have. Per-size received counts (LineItem.receivedSizeColorBreakdown), bulkMarkGoodsReceived, GoodsNotice \"goods arrived\" alerts.",
+   "rec": "Done. Just confirm the crew actually uses receiving.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/garment-check-in-system"
+  },
+  {
+   "text": "#2 Attach artwork/files to customer profiles (516 votes) — Have",
+   "summary": "Canny: under review, 516 votes. It would be nice to be able to attach customers art files to their profile instead of each invoice. This will allow a central location to lo PrintFlow: Have. CustomerFile model + customers/components/customer-files-section.tsx.",
+   "rec": "Done. Nothing to build.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/attach-artworkfiles-to-customer-profiles"
+  },
+  {
+   "text": "#3 Automation to Update Dates (474 votes) — Partial",
+   "summary": "Canny: under review, 474 votes. Need an automation to update the Production Due Date or Invoice Date based on a status change PrintFlow: Partial. AutomationRule has status triggers and delays, but the actions (change_status, send_email/sms, request_payment, preset tasks, art queue) have no \"set due/invoice date\" action.",
+   "rec": "Add a \"set production/invoice date\" automation action. Small build, 474 votes.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/automation-to-update-dates"
+  },
+  {
+   "text": "#4 Integrate Customer Credit (473 votes) — Have",
+   "summary": "Canny: open, 473 votes. It would be great if there was a way to apply credit to a customer's account. That way if they overpay, or request a refund, a credit can be PrintFlow: Have. CustomerCredit ledger + Customer.creditBalance + CREDIT payment method applied to invoices.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/integrate-customer-credit"
+  },
+  {
+   "text": "#5 For the love of Printavo...Auto-save (or Save Alert) please!!! (463 votes) — Have",
+   "summary": "Canny: complete, 463 votes. The worst feeling in the world is to feel so accomplished after finishing a complicated invoice only to accidentally hit the wrong button an PrintFlow: Have. unsaved-changes-guard (beforeunload) + discard-changes dialog + use-auto-save hook. The quote builder itself has no autosave.",
+   "rec": "Done (save alert). Optional: true autosave in the quote builder.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/for-the-love-of-printavoauto-save-or-save-alert-please"
+  },
+  {
+   "text": "#6 Intuitive Search (434 votes) — Partial",
+   "summary": "Canny: complete, 434 votes. Can we PLEASE get a search feature that doesn't have to be exact spelling, punctuation, etc. to work? The current search function leaves muc PrintFlow: Partial. /api/search + command menu use case-insensitive \"contains\" matching. No fuzzy/typo-tolerant search (no pg_trgm).",
+   "rec": "Add trigram/fuzzy matching to global search.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/intuitive-search"
+  },
+  {
+   "text": "#7 Power Scheduler - Multiple calendars and statuses per decoration (420 votes) — Have",
+   "summary": "Canny: complete, 420 votes. Would be ideal to have a screenprint calendar, embroidery calendar, heatpress calendar, etc. It would be nice to be able to click on the lef PrintFlow: Have. ProductionStatus.decorationTypeId (statuses per decoration type) + calendar work-type-filter, owner filter, day columns.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/power-scheduler-multiple-calendars-and-statuses-per-decoration"
+  },
+  {
+   "text": "#8 Custom sizes (397 votes) — Have",
+   "summary": "Canny: open, 397 votes. It would be great if we could add Custom sizes. For example SM/Med or L/XL PrintFlow: Have. Organization.sizeList is configurable (lib/size-ladder.ts); unknown sizes sort to the end.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/custom-sizes"
+  },
+  {
+   "text": "#9 Block Calendar Days (394 votes) — Partial",
+   "summary": "Canny: open, 394 votes. It would be great to be able to block days off in calendar, so that no jobs can be scheduled on that day. For example: we are closed on Labo PrintFlow: Partial. lib/utilities/shop-days.ts: open days + shop holidays feed the schedule engine. No ad-hoc \"block this date\" on the calendar.",
+   "rec": "Add one-off blocked dates to shop days and the calendar drop guard.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/block-calendar-days"
+  },
+  {
+   "text": "#10 Time based automations (378 votes) — Have",
+   "summary": "Canny: complete, 378 votes. It would be great if we could set up time based triggers/conditions/automations for various operations. An example would be if a proof was s PrintFlow: Have. Automation actions take delayDays/delayTime; ScheduledAutomationAction runs them later.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/time-based-automations"
+  },
+  {
+   "text": "#11 Payment Request Overhaul (360 votes) — Partial",
+   "summary": "Canny: open, 360 votes. Payment requests need an update. We should be able to request a 50% deposit, but if the customer wants to pay the whole amount they can do s PrintFlow: Partial. Quote deposit ($/%) at approval + PaymentRequest model. Not verified: \"deposit as a minimum, customer can pay any amount up to the full total\".",
+   "rec": "Check that customers can pay more than the deposit. If not, add min-payment/flexible amount.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/payment-request-overhaul"
+  },
+  {
+   "text": "#12 In-house messenger (349 votes) — Have",
+   "summary": "Canny: open, 349 votes. It would be great if we could have an in-house (employee to employee) Messenger. To let know a customer called, etc. Post it notes don't cut PrintFlow: Have. Team chat: ChatChannel/ChatMessage/reactions/urgent pings/push.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/in-house-messenger"
+  },
+  {
+   "text": "#13 RUSH Order Tag (346 votes) — Partial",
+   "summary": "Canny: complete, 346 votes. Can you guys please give us a way to flag an order as a RUSH- that will carry across all statuses? Simple Check box that adds a red line acr PrintFlow: Partial. OrderPriority is only NORMAL/LOCKED. Rush is only a fee line. CalendarHighlightRule can color cards.",
+   "rec": "Add a RUSH flag/priority that shows across statuses and on the calendar.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/rush-order-tag"
+  },
+  {
+   "text": "#14 Highlight Production Notes 2.0 (323 votes) — Have",
+   "summary": "Canny: complete, 323 votes. We would like to be able to actually HIGHLIGHT notes in color. Bold and Italics still gets missed by the production team. Color would \"pop\"  PrintFlow: Have. rich-text-editor.tsx has bold/italic/Highlighter (background color).",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/highlight-production-notes-20"
+  },
+  {
+   "text": "#15 Accounts Payable Contact (309 votes) — Have",
+   "summary": "Canny: complete, 309 votes. We send a formal \"invoice\" through the messages option at the conclusion of each order. Most of our customers are larger companies that have PrintFlow: Have. Customer.billingContactId: a separate contact gets payment requests & billing emails.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/accounts-payable-contact"
+  },
+  {
+   "text": "#16 Freeze Completed orders so they cannot be changed (262 votes) — Missing",
+   "summary": "Canny: under review, 262 votes. Once an order is complete, it would be great to FREEZE it, so no changes can be made. Viewing and copy should be available, but changing sho PrintFlow: Missing. No edit lock for completed/paid orders found. LOCKED priority only pins the schedule date.",
+   "rec": "Add a read-only lock on completed/paid orders with an admin override.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/freeze-completed-orders-so-they-cannot-be-changed"
+  },
+  {
+   "text": "#17 Bulk Update Status (253 votes) — Partial",
+   "summary": "Canny: under review, 253 votes. It would be extremely helpful to be able to check a handful of invoices and update the status from the main invoice/quote screen. It takes a PrintFlow: Partial. status-change.ts handles bulk-setting many orders (dedupes emails), and goods have a bulk menu. No clear multi-select status change found on the invoice/quote list.",
+   "rec": "Confirm there is a list-view multi-select status change. Add one if missing.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/bulk-update-status"
+  },
+  {
+   "text": "#18 Statements for Customers (243 votes) — Have",
+   "summary": "Canny: complete, 243 votes. I would like to send a customer a statement showing only their open invoices. It could be similar to the Customer Public Profile email but w PrintFlow: Have. lib/customer-statement.ts + pdf-statement.tsx + /api/pdf/statement.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/statements-for-customers"
+  },
+  {
+   "text": "#19 Plus Size Upcharge (242 votes) — Have",
+   "summary": "Canny: complete, 242 votes. Is it possible to insert an automatic upcharge for plus sizes? PrintFlow: Have. Per-size garment pricing (sizePrices) with upsizes priced on their own lines.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/plus-size-upcharge"
+  },
+  {
+   "text": "#20 Archive/void/close Quotes & Invoices (237 votes) — Have",
+   "summary": "Canny: open, 237 votes. No need to mark an invoice as paid when the Quote never went through or customer didn't pay. Also, we shouldn't be deleting invoices PrintFlow: Have. Invoice.voidedAt with void/unvoid actions + void badge. Quotes use lost reasons.",
+   "rec": "Done.",
+   "link": "https://printavo.canny.io/ideas-suggestions/p/archivevoidclose-quotes-invoices"
+  }
+ ]
+}
