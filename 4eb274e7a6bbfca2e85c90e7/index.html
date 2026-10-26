@@ -29,7 +29,7 @@ textarea{display:none;width:100%;margin-top:8px;min-height:60px;font:16px/1.4 in
 <div id="tb"></div><div id="list"></div></div>
 <div class="bar"><div class="in"><div id="cnt">0 chosen</div><div id="msg"></div><button id="go" hidden>Submit</button></div></div>
 <script>
-const ENDPOINT='https://pqnlmtbliezpjibvtlat.supabase.co/functions/v1/checklist-submit';
+const ENDPOINT='https://checklist-submit.sean-39c.workers.dev';
 const q=new URLSearchParams(location.search),isTest=q.get('test')==='1';
 let listId='',title='Checklist',items=[];
 function b64(s){s=s.replace(/-/g,'+').replace(/_/g,'/');return decodeURIComponent(escape(atob(s)))}
