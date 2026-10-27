@@ -1,0 +1,70 @@
+{
+  "title": "Fleet Command Center — clear the pile",
+  "actions": [
+    {"v": "progress", "label": "Progress"},
+    {"v": "hold", "label": "Hold"},
+    {"v": "close", "label": "Close"}
+  ],
+  "items": [
+    {
+      "text": "Clear the Open ping — wheeled robot ranking",
+      "summary": "Pick Feather (or another platform), or green-light a timed 1× trial before committing. This single Open ping has blocked every other Waiting item for ~19 days.",
+      "rec": "Progress — clear this Open ping so finished work can surface."
+    },
+    {
+      "text": "W43 routine cut list",
+      "summary": "Doc’s weekly receipt lists cuts A–H (Checklist watch, X cusp merge, Marketing merge, Wake Recon once daily, Hub feedback, CLIs into Monday, spent one-shots). Approve or reject the set.",
+      "rec": "Progress — approve or reject so Doc can apply."
+    },
+    {
+      "text": "Open ping auto-expire?",
+      "summary": "Proposed: unanswered Open ping auto-expires after 3 business days and the next Waiting item surfaces. Alt: keep the hard block and re-surface weekly.",
+      "rec": "Progress — pick auto-expire or weekly re-surface."
+    },
+    {
+      "text": "Corrections checklist",
+      "summary": "12 correction cards were already sent today. Submit that list so only Do it items get written into the fleet rules.",
+      "rec": "Progress — open the corrections list and Submit."
+    },
+    {
+      "text": "Cloudflare token for Your Mission",
+      "summary": "Staging admin password rotation is blocked: box has no Cloudflare credential. Needs a Workers Scripts:Edit API token in box-secrets, or wrangler login on the box.",
+      "rec": "Progress — drop the token or run wrangler login."
+    },
+    {
+      "text": "Key rotation + 1Password",
+      "summary": "X security sweep found 7 issues. Needs you to rotate AWS, GitHub, Anthropic/OpenAI, and the Google password, plus approve 1Password at $2.99/mo.",
+      "rec": "Hold — park until you have a block of time for rotations."
+    },
+    {
+      "text": "PrintFlow Railway login",
+      "summary": "Key-rotation prep is ready. Needs ~1 minute of railway login --browserless on your phone, then dashboard logins for the provider cutover.",
+      "rec": "Progress — do the one-minute Railway approve when free."
+    },
+    {
+      "text": "Hub Money PRs",
+      "summary": "PRs #136 and #137 are SHIP-READY but not merged. Before live: Intuit prod keys and Teller keys still needed.",
+      "rec": "Hold — merge when you’re ready to supply Intuit + Teller keys."
+    },
+    {
+      "text": "Website PR #701",
+      "summary": "Hybrid min 48 + rebrand 2024 is on a SHIP-READY PR. Needs review / merge / deploy go, plus confirm $4.00 hybrid from 48 in WebMCP.",
+      "rec": "Progress — review and merge when you want it live."
+    },
+    {
+      "text": "Bio + Wikidata texts",
+      "summary": "Four FINAL bios (Sean long/short, Print Hybrid long/short) plus Wikidata QuickStatements wait for your sign-off. Also confirm the FB profile id.",
+      "rec": "Close — if you already approved these elsewhere; else Progress to approve."
+    },
+    {
+      "text": "24h lead-nudge draft",
+      "summary": "Print Hybrid has a draft 24h follow-up email ready. Nothing is live. Needs a yes on the exact text.",
+      "rec": "Progress — yes/edit the draft, or Close if you dropped the idea."
+    },
+    {
+      "text": "Import Hagglebot under CFO",
+      "summary": "Hagglebot is live in the X marketplace. Needs a yes to import it under CFO.",
+      "rec": "Close — if you don’t want it; else Progress to import under CFO."
+    }
+  ]
+}

@@ -16,7 +16,7 @@ header h1{font-size:24px;letter-spacing:-.02em;margin:0 0 4px}header p{margin:0 
 .seg{display:inline-flex;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px}
 .seg button{border:0;background:transparent;color:var(--ink);font:600 13px/1 inherit;padding:8px 13px;border-radius:999px;cursor:pointer;position:relative}
 .seg button.on::before{content:'✓ ';font-weight:800}.seg button.on{box-shadow:0 1px 3px rgba(0,0,0,.25)}
-.seg button.on{color:#fff}.seg button.on[data-v=do]{background:var(--do)}.seg button.on[data-v=done]{background:var(--done)}.seg button.on[data-v=drop]{background:var(--drop)}
+.seg button.on{color:#fff}.seg button.on[data-v=do],.seg button.on[data-v=progress]{background:var(--do)}.seg button.on[data-v=done],.seg button.on[data-v=close]{background:var(--done)}.seg button.on[data-v=drop]{background:var(--drop)}.seg button.on[data-v=hold]{background:#d97706}
 .nb{border:0;background:none;color:var(--acc);font:500 13px inherit;padding:6px 4px;cursor:pointer}
 textarea{display:none;width:100%;margin-top:8px;min-height:60px;font:16px/1.4 inherit;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:8px 10px;resize:vertical}
 .card.open textarea{display:block}
@@ -25,32 +25,38 @@ textarea{display:none;width:100%;margin-top:8px;min-height:60px;font:16px/1.4 in
 #go{border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 15px inherit;padding:11px 22px}#go:disabled{opacity:.5}
 .legend{font-size:12px;color:var(--mute);margin:-8px 0 14px}.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--recl);vertical-align:-1px;margin-right:4px}
 </style></head><body><div class="wrap">
-<header><h1 id="h">Loading…</h1><p>These are your open asks. Tap <b>Do it</b>, <b>Done</b> or <b>Drop</b> on each one, add a note if you want, then hit Submit and Rosey takes it from there.</p></header>
+<header><h1 id="h">Loading…</h1><p id="sub">These are your open asks. Tap <b>Do it</b>, <b>Done</b> or <b>Drop</b> on each one, add a note if you want, then hit Submit and Rosey takes it from there.</p></header>
 <div id="tb"></div><div id="list"></div></div>
 <div class="bar"><div class="in"><div id="cnt">0 chosen</div><div id="msg"></div><button id="go" hidden>Submit</button></div></div>
 <script>
 const ENDPOINT='https://checklist-submit.sean-39c.workers.dev';
 const q=new URLSearchParams(location.search),isTest=q.get('test')==='1';
-let listId='',title='Checklist',items=[];
+let listId='',title='Checklist',items=[],actions=[{v:'do',label:'Do it'},{v:'done',label:'Done'},{v:'drop',label:'Drop'}];
 function b64(s){s=s.replace(/-/g,'+').replace(/_/g,'/');return decodeURIComponent(escape(atob(s)))}
 function upd(){const c=document.querySelectorAll('.seg button.on').length;document.getElementById('cnt').textContent=c+' of '+items.length+' chosen'}
 async function load(){
- if(q.get('data')){const d=JSON.parse(b64(q.get('data')));listId=d.id||'inline';title=d.title||title;items=d.items}
+ if(q.get('data')){const d=JSON.parse(b64(q.get('data')));listId=d.id||'inline';title=d.title||title;items=d.items;if(Array.isArray(d.actions)&&d.actions.length)actions=d.actions}
  else if(q.get('items')){items=q.get('items').split('|');listId=q.get('id')||'inline';title=q.get('title')||title}
  else{const l=q.get('list')||'2026-10-12';const u=/^https:/.test(l)?l:'lists/'+encodeURIComponent(l)+'.json';
-  const d=await (await fetch(u,{cache:'no-store'})).json();listId=d.id||l;title=d.title||title;items=d.items}
+  const d=await (await fetch(u,{cache:'no-store'})).json();listId=d.id||l;title=d.title||title;items=d.items;if(Array.isArray(d.actions)&&d.actions.length)actions=d.actions}
  items=items.map(x=>typeof x==='string'?{text:x}:x);if(q.get('only'))items=items.slice(0,+q.get('only'));
- document.title=title;document.getElementById('h').textContent=(isTest?'TEST — ':'')+title;
+ document.title=title;document.getElementById('h').textContent=(isTest?'TEST — ':'')+title;const custom=actions.some(a=>a.v==='progress'||a.v==='hold'||a.v==='close');const sub=document.getElementById('sub');if(sub)sub.innerHTML=custom?'Tap <b>Progress</b>, <b>Hold</b> or <b>Close</b> on each one, add a note if you want, then hit Submit and Rosey takes it from there.':'These are your open asks. Tap <b>Do it</b>, <b>Done</b> or <b>Drop</b> on each one, add a note if you want, then hit Submit and Rosey takes it from there.';
  if(isTest)document.getElementById('tb').innerHTML='<div class="test">TEST MODE — submission will be marked TEST</div>';
  const L=document.getElementById('list');
- items.forEach((it,i)=>{const r=document.createElement('div');r.className='card row-item';r.innerHTML=
-  `<div class="t"><span class="n">${i+1}</span><span class="tt"></span></div><div class="s"></div><div class="r"><b>Rosey recommends:</b> <span></span></div>
-  <div class="row"><div class="seg"><button data-v="do">Do it</button><button data-v="done">Done</button><button data-v="drop">Drop</button></div><button class="nb">+ Note</button></div><textarea placeholder="Note for Rosey"></textarea>`;
+ items.forEach((it,i)=>{const r=document.createElement('div');r.className='card row-item';
+  r.innerHTML=`<div class="t"><span class="n">${i+1}</span><span class="tt"></span></div><div class="s"></div><div class="r"><b>Rosey recommends:</b> <span></span></div>`;
   r.querySelector('.tt').textContent=it.text;
   const s=r.querySelector('.s');if(it.summary)s.textContent=it.summary;else s.remove();
   const rc=r.querySelector('.r');if(it.rec)rc.querySelector('span').textContent=it.rec;else rc.remove();
-  r.querySelector('.nb').onclick=e=>{r.classList.toggle('open');e.target.textContent=r.classList.contains('open')?'− Note':'+ Note';if(r.classList.contains('open'))r.querySelector('textarea').focus()};
-  r.querySelectorAll('.seg button').forEach(bt=>bt.onclick=()=>{const on=bt.classList.contains('on');r.querySelectorAll('.seg button').forEach(x=>x.classList.remove('on'));if(!on)bt.classList.add('on');upd()});
+  const row=document.createElement('div');row.className='row';
+  const seg=document.createElement('div');seg.className='seg';
+  actions.forEach(a=>{const bt=document.createElement('button');bt.dataset.v=a.v;bt.textContent=a.label;seg.appendChild(bt)});
+  row.appendChild(seg);
+  const nb=document.createElement('button');nb.className='nb';nb.textContent='+ Note';row.appendChild(nb);
+  r.appendChild(row);
+  const ta=document.createElement('textarea');ta.placeholder='Note for Rosey';r.appendChild(ta);
+  nb.onclick=e=>{r.classList.toggle('open');e.target.textContent=r.classList.contains('open')?'− Note':'+ Note';if(r.classList.contains('open'))ta.focus()};
+  seg.querySelectorAll('button').forEach(bt=>bt.onclick=()=>{const on=bt.classList.contains('on');seg.querySelectorAll('button').forEach(x=>x.classList.remove('on'));if(!on)bt.classList.add('on');upd()});
   L.appendChild(r)});
  upd();document.getElementById('go').hidden=false}
 document.getElementById('go').onclick=async()=>{
