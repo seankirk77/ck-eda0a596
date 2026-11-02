@@ -1,0 +1,20 @@
+{
+ "title": "Board decisions — Mon Nov 2, 2026",
+ "items": [
+  {
+   "text": "Have the bookkeeper reconcile LNB checking",
+   "summary": "CFO pulled the live bank feed on 11/1. LNB shows $72,619 at the bank but -$74,276 in QuickBooks, a $146.9K gap, and 52 feed items are still unreviewed (down from 70). Until it's reconciled, the books can't back cash calls. No cost; it just needs your OK to contact her, with a target of 11/9.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Move TikTok recovery off sales@ and set up a quotes@ lead alias",
+   "summary": "TikTok's account recovery is still sales@ because TikTok refused the change on the web; it can only be changed in the TikTok phone app (about 10 minutes, free). Devil's Advocate and Marketing also want a quotes@ shared alias so leads don't depend on one inbox, then one test message into each lead inbox.",
+   "rec": "Do it. You change the recovery email in the TikTok app; bots set up and test the alias."
+  },
+  {
+   "text": "OK the 24-hour lead nudge (only when we owe the reply)",
+   "summary": "Carried from last week with no answer yet. Our test lead took about 120 hours from form to price, and 0 of 1 leads were priced within 24 hours. One nudge, 24 business hours later, only when the shop owes the reply, never when the lead owes art. Draft: print-hybrid/outbound/lead-24h-nudge-DRAFT-20261019.md.",
+   "rec": "Do it. A bot builds it and sends you the final text for one more yes before it goes live."
+  }
+ ]
+}
