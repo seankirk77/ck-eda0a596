@@ -1,0 +1,25 @@
+{
+ "title": "Board decisions — Mon Nov 9, 2026",
+ "items": [
+  {
+   "text": "Have the bookkeeper reconcile LNB checking",
+   "summary": "Carried from last week with no answer. QuickBooks now shows LNB at -$86,326.59, $12K deeper than last week, and the $146.9K gap with the bank still isn't explained. 52 feed items are still unreviewed. A/R over 30 days dropped a bit to $71,559 across 80 invoices. It needs your OK for CFO to contact her.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Move TikTok recovery off sales@, add a quotes@ alias, and fix the Facebook hybrid minimum",
+   "summary": "TikTok's recovery email is still sales@ and can only be changed in the TikTok phone app (about 10 minutes). X already moved to rosey@ back on 9/22. No lead inbox has been tested and there's no quotes@ alias yet. Facebook's Hybrid service text still says a 72-piece minimum while Google says 48. Marketing would test each lead inbox and change Facebook to 48 after your OK.",
+   "rec": "Do it. You change TikTok in the app; Marketing does the alias test and the Facebook fix by Wednesday."
+  },
+  {
+   "text": "Slow down the Hub Alexa sync check",
+   "summary": "Doc found the Alexa sync check runs about 1,428 times a week, 32% of all bot usage. The idea is to run it less often, or only when a sync is actually pending. Any routine change is your call.",
+   "rec": "Do it, as long as Alexa updates you rely on still land fast enough."
+  },
+  {
+   "text": "OK the 24-hour lead nudge (only when we owe the reply)",
+   "summary": "Third week waiting. Our only test lead took about 120 hours from form to price. One nudge, 24 business hours later, only when the shop owes the reply, never when the lead owes art. Draft: print-hybrid/outbound/lead-24h-nudge-DRAFT-20261019.md. Nothing sends until you approve the final text.",
+   "rec": "Do it. A bot builds it and sends you the final text for one more yes."
+  }
+ ]
+}
