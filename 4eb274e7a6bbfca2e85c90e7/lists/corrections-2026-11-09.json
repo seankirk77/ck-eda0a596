@@ -1,0 +1,55 @@
+{
+ "title": "Rules from last week's corrections — Mon Nov 9, 2026",
+ "items": [
+  {
+   "text": "Interactive Pages must save for real",
+   "summary": "CFO, 11/3. Your Card 6761 picks didn't save because the Page kept them only in the browser. Rule for every bot: any Page that takes your input saves it somewhere durable and gets a reload test before it reaches you. Goes in the fleet rules (TEMPLATE.md).",
+   "rec": "Do it."
+  },
+  {
+   "text": "Research means a real multi-source pass",
+   "summary": "Ideas, twice. 11/4: \"don't be so quick and lazy... do the true research.\" 11/8: the no-website list came mostly from the Chamber directory, which skews toward businesses that already have sites. Rule: research asks get several independent sources before they're reported; for no-website hunts use Maps and review listings, social pages, booking apps and license or permit rolls, with chamber lists only as a side check. Goes in Ideas' and Researcher's job cards.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Print Hybrid has no vinyl cutter",
+   "summary": "Rosey, 11/5. Never suggest cutting vinyl in-house. This is a shop fact, so it goes in shared memory every bot sees, not a job card.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Group chats: one correct answer is enough",
+   "summary": "PrintHybrid Website, 11/6 in Coder Group. \"Only one correct response is needed.\" Rule: if a teammate already answered your question correctly, the rest stay quiet. Goes in the fleet rules for every group chat.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Website-offer peers must match the product",
+   "summary": "Rosey, 11/8. I showed you monthly design-and-host shops. You wanted companies doing what you do: rebuilding existing local-business sites and publicly promising fast loading plus AI and agent SEO. Rule goes in my memory and the Site Rebuild card for any competitor or peer search.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Company naming rules",
+   "summary": "Rosey, six corrections 11/8 to 11/9 (same evening, so it repeated before any rule could land). Rule: real English words only, no coined blends; Group on the end reads as established; the words must signal AI, agents and tech moving forward, not generic corporate words like Horizon or Beacon; when you like a word, new ideas keep that exact word; and don't just re-stack Agent or AI onto the same few words. Goes in my memory and in Ideas' card.",
+   "rec": "Do it."
+  },
+  {
+   "text": "LNB vs QuickBooks is not a risk",
+   "summary": "CFO, today 7:56 AM. The roughly $146.9K gap between the bank and QuickBooks is bank activity the bookkeeper hasn't synced yet, not a books gap. Rule: CFO stops calling it a risk in memos and board numbers. Goes in CFO's job card.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Repeat: solve it yourself first",
+   "summary": "Rosey, 11/4: \"why don't you work on solving it yourself.\" That rule was already approved and applied on 10/12, so this is a repeat after a rule, not a new one. No new wording; I'm flagging it so you can see it slipped once.",
+   "rec": "Keep as is."
+  },
+  {
+   "text": "Older lists are still waiting",
+   "summary": "The 10/26 list (12 cards) and the 11/2 list (13 cards) were never submitted, so none of those rules are applied yet. Biggest ones: Site Rebuild keeps the customer's look, Vault first for logins, after-hours deploys. 11/2 list: https://seankirk77.github.io/ck-eda0a596/4eb274e7a6bbfca2e85c90e7/?list=corrections-2026-11-02",
+   "rec": "Open it when you have five minutes."
+  },
+  {
+   "text": "This week's one change: one Submit a week",
+   "summary": "Four Monday lists in a row (two board, two corrections) have no Submit, so rules pile up unapplied. Proposal: starting next Monday, the corrections review rides as the last five cards on the board decisions list, so you have one list and one Submit a week. Alternative: keep them separate, and any card unanswered for two weeks closes as no change (bots keep it only in their own memory).",
+   "rec": "Do it (merge into the board list)."
+  }
+ ]
+}
