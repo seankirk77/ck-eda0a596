@@ -1,0 +1,35 @@
+{
+ "title": "Board decisions — Mon Nov 16, 2026",
+ "items": [
+  {
+   "text": "Let CFO ask the bookkeeper her rate and hours",
+   "summary": "Third week carried. QuickBooks shows LNB at -$87,851.51 (was -$86,326.59). You said the gap is unsynced bank activity, not missing money, but the Visa and Sapphire balances haven't posted in 1–3 weeks, and 52 feed items are still unreviewed. A/R over 30 days is $69,996 across 80 invoices. This is only asking her price. Nothing gets hired or spent until you see it.",
+   "rec": "Do it. CFO asks for the quote only."
+  },
+  {
+   "text": "Change TikTok's recovery email from sales@ to sean@ (in the TikTok app)",
+   "summary": "You picked login rosey@ and recovery sean@ back on 10/19, but recovery is still sales@. It can only be changed in the TikTok phone app (about 10 minutes). Devil's Advocate: using rosey@ for both login and recovery would mean one breach takes both.",
+   "rec": "Do it. You do this one in the app."
+  },
+  {
+   "text": "OK Marketing to test the lead inboxes and fix stale listings",
+   "summary": "No lead inbox has been tested yet (Marketing missed last Wednesday). Facebook's Hybrid text still says a 72-piece minimum while Google says 48. BBB and Yellow Pages still show the old Integritees name and your cell. Marketing would send one test per lead inbox by Wed 11/18, change Facebook to 48, and fix BBB and Yellow Pages.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Have the Email bot log every real lead (time in, time priced)",
+   "summary": "There's no lead log, so nobody can tell how fast quotes go out. Our only test lead took about 120 hours from form to price. One file with time in and time priced lets Recon count the 24-hour rate each week. It's logging only and sends nothing.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Name one floor person to log DTF downtime, or retire the log",
+   "summary": "The downtime log has had 0 rows in six weeks because nobody was ever named to write it, and no bot can see the machines. Without rows, any Quatro or new-machine decision rests on memory. Alternative: retire the log and park machine-buy talk until January.",
+   "rec": "Name someone (one row per DTF day). If nobody fits, retire it."
+  },
+  {
+   "text": "OK the 24-hour lead nudge (only when we owe the reply)",
+   "summary": "Fourth week waiting. One nudge, 24 business hours later, only when the shop owes the reply, never when the lead owes art. Draft: print-hybrid/outbound/lead-24h-nudge-DRAFT-20261019.md. Nothing sends until you approve the final text.",
+   "rec": "Do it. A bot builds it and sends you the final text for one more yes."
+  }
+ ]
+}
