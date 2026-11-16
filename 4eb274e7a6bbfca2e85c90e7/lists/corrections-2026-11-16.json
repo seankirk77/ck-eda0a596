@@ -1,0 +1,50 @@
+{
+ "title": "Rules from last week's corrections — Mon Nov 16, 2026",
+ "items": [
+  {
+   "text": "Website copy: four shop-fact fixes",
+   "summary": "PrintHybrid Website, 11/11 and 11/13. (1) We offer embroidery and promo products; never say they're made off-premises. (2) Same-day DTF for most work, including contract DTF (call first); screen and hybrid usually aren't same-day because blanks get ordered. (3) Say \"specialized underbase,\" never plastisol vs water-based. (4) Say \"traditional screen printing\" when contrasting with hybrid. Goes in Website's job card and the shared site facts every bot sees (replaces \"underbase is plastisol\" from 11/7).",
+   "rec": "Do it."
+  },
+  {
+   "text": "Tell you up front when there's a better option",
+   "summary": "Sean 2.0, 11/12 (you said \"Rule:\"). It suggested a roller when a 0.25 mm stamp was the better first pick. Rule for every bot: if there's a better option than what you asked about or what was recommended, say so first. Goes in the fleet rules (TEMPLATE.md).",
+   "rec": "Do it."
+  },
+  {
+   "text": "Rosey's own sign-in problems go to Rosey, not you",
+   "summary": "PrintHybrid Website, 11/9. It asked you about Rosey's Google re-verify for Search Console. You: \"be proactive and ask her. stop wasting my time.\" Rule: any blocker on a rosey@ account goes to Rosey first. Goes in the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Check the sign-in path before asking you to tap",
+   "summary": "Hub Coder, 11/12 late night. It sent you through a Tailscale invite and a phone connect card that hit the wrong account. Rule: before asking you to sign in or connect anything, the bot confirms the exact steps and device work, then asks for one tap at a good time. No chains of asks late at night. Goes in the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Estimate usage before creating any routine",
+   "summary": "Hub Coder, 11/9. The Alexa sync ran every 5 minutes (~1,428 runs a week, ~32% of usage) even though the routines rule already said default to daily. It's nightly now. Added wording: before any routine is made, the bot estimates weekly runs and usage and picks the slowest timing that still works. Goes in TEAM.md's routines rule and the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Amazon links open in the app",
+   "summary": "Sean 2.0, 11/12. Send Amazon links as com.amazon.mobile.shopping://www.amazon.com/dp/ASIN so they open in the Amazon app. Goes in shared memory so every bot that sends shopping links uses it. (The stamp-vs-roller pick stays in Sean 2.0's own memory as a one-off.)",
+   "rec": "Do it."
+  },
+  {
+   "text": "Repeat after a rule: Rosey handed you a lookup",
+   "summary": "Rosey, 11/9. Told you to check WHOIS yourself for nextmindsolutions.com instead of finding the owner. The do-it-yourself rule was already applied 10/12, so there's no new wording. This is a repeat to note, not a new rule.",
+   "rec": "Drop it (note only)."
+  },
+  {
+   "text": "Old lists: 10/26, 11/02, 11/09 never got a Submit",
+   "summary": "D1 still shows no real Submit since 10/26, so none of those rule cards were applied. Do it = I re-send the still-open ones as in-chat tap cards a few at a time (board motion 4 from today). Drop = close them all as no change.",
+   "rec": "Do it."
+  },
+  {
+   "text": "This week's one change: an unanswered Open ping steps aside after 3 business days",
+   "summary": "The Open ping (\"One of 200\" after-live comments) has been waiting since 11/5, and six finished results are stuck behind it in Waiting. Change: if you haven't answered the Open ping in 3 business days, it moves to the top of Waiting and the next most important item gets a turn. Alt: keep the hard block and resurface the stuck ping once a week. Proposed 10/26 and 11/02 too, never answered.",
+   "rec": "Do it."
+  }
+ ]
+}
