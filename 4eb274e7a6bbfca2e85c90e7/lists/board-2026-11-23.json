@@ -1,0 +1,25 @@
+{
+ "title": "Board decisions — Mon Nov 23, 2026",
+ "items": [
+  {
+   "text": "Make printhybrid.com/review a plain link to Google reviews",
+   "summary": "Right now /review only shows the Google button after someone picks 5 stars. That's review gating, which Google's policy bans and can get reviews removed. Reviews are flat at Google 5.0 with 27, Facebook 0, Yelp 0. Printflow Coder would make /review go straight to the Google review link, through the normal review gate.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Let CFO ask the bookkeeper her rate and hours",
+   "summary": "Third week carried. QuickBooks shows LNB at −$102,549.59, unchanged since 11/20, and Sapphire hasn't moved since 10/28. Undeposited is $77,443.77, November COGS is $0, and there's a $27,214.62 gap between the P&L and balance sheet. CFO first checks whether the bank feeds are disconnected (free), then asks her price only. You decide after seeing it.",
+   "rec": "Do it. Price only, no hiring yet."
+  },
+  {
+   "text": "Drop the DTF downtime log for a daily Quatro care check in PrintFlow",
+   "summary": "The downtime log has 0 entries in 7 weeks because nobody was named to keep it. PrintFlow shows 30 DTF jobs since 11/16 at a 3.1-hour median, but the worst job sat 167.6 hours with no reason recorded. The Quatro is already in PrintFlow Equipment with no care schedule. Whoever runs DTF would tick one daily check; COO reads it every Monday. Machine-buy talk stays parked to January.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Add your phone as TikTok's recovery in the TikTok app",
+   "summary": "Print Hybrid's TikTok still recovers through sales@. TikTok refused rosey@ on 10/30, and sean@ is already tied to another TikTok account, so your phone number is the path that works. It's about 5 minutes in the TikTok app under account settings.",
+   "rec": "Do it."
+  }
+ ]
+}
