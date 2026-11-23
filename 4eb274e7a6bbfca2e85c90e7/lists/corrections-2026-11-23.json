@@ -1,0 +1,65 @@
+{
+ "title": "Rules from last week's corrections — Mon Nov 23, 2026",
+ "items": [
+  {
+   "text": "Amazon links: go back to normal https links (replaces last week's rule)",
+   "summary": "iPhone bot, 11/16 7:18 PM. It sent the com.amazon.mobile.shopping:// app link you approved that morning, and you said \"that amazon link does not work.\" App-scheme links fail in chat and on the Mac. New rule: send plain https://www.amazon.com/dp/ASIN links, which still open the Amazon app on your iPhone. Replaces TEAM.md rule \"Amazon links\", fleet rule 12 in TEMPLATE.md, and the shared memory note.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Say a product exists = send its link and price in the same message",
+   "summary": "Ideas, 11/22 (\"once again... don't be lazy\"). It said heat-seal tag presses and handheld welders exist but sent no links. LBKx806 got the same \"don't be lazy\" on 11/21 for stopping at \"couldn't check\". Dig-in is already fleet rule 2 (approved 11/21), so the only new wording is: \"Any product or tool you mention comes with its own product-page link and price (if known) in that same message, and each link is opened first.\" Added to fleet rule 2's self-check.",
+   "rec": "Do it."
+  },
+  {
+   "text": "You're out shopping today: local walk-in stores first",
+   "summary": "Researcher, 11/19 (flagged). You were driving around Lubbock looking for C7/C9 stringer wire, and it led with online shippers. Rule: when you're out and want to buy or pick up today, lead only with walk-in stores, today's hours, and verified in-store or pickup stock. Ship-to-home only if you ask or nothing local exists, and then after the local answer. Goes in the fleet rules so Researcher, Sean 2.0, Dad Life, and Ideas all follow it.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Hardware/network setup: research after the first failure, before asking you for more steps",
+   "summary": "iPhone bot, 11/20. It ran several rounds of trial-and-error on the ESP32 Wi-Fi join, asking you for a physical step each round. You: \"we can't be the only person that dealt with this.\" Rule: after the first failed setup step, search repo issues, docs, and forums, then bring one fix backed by evidence before asking you for any more physical tests. Goes in the fleet rules (proactive-until-blocked.md).",
+   "rec": "Do it."
+  },
+  {
+   "text": "Every handoff or build spec starts with what was tried",
+   "summary": "iPhone bot, 11/20 (\"context is everything\"). Its build spec gave root causes only, with no history. Rule: any handoff or spec for another bot or AI opens with a full \"what we tried, what failed, hard requirements\" section, then the conclusions. Goes in the delegation-brief skill and fleet rule 2a (handoff).",
+   "rec": "Do it."
+  },
+  {
+   "text": "Before calling something missing or gone, check all the evidence",
+   "summary": "Two misses on 11/22. Rosey called the door recess \"out of frame\" and stopped the scan at noon Saturday, but the box sat there all night until it was taken at 1:31 PM. Print Hybrid told the Board \"no backup/restore\" after only searching the repo, while Railway had nightly backups and a 10/8 restore test. Rule: inspect every frame, follow an object until it is really gone, scan up to now, and check the host platform as well as the repo. Say exactly what you checked (for example, \"not found in repo\"). Goes in the Verify-before-claiming rule.",
+   "rec": "Do it."
+  },
+  {
+   "text": "One shared file per combined report, and the chair owns it",
+   "summary": "Devil's Advocate, 11/22 (flagged). It wrote its own \"consolidated\" security report while Rosey merged one, so you saw two files (\"i want one file\"). Rule: when you ask for a combined report, the chair (Rosey) owns the single file and seats only add their sections to it. Before starting any shared deliverable, check whether one already exists or is in progress. Goes in the board charter (board/README.md) and the fleet rules.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Label every DM before it reaches you; draft replies for customer leads only",
+   "summary": "Marketing, 11/18. It treated Lucas Miller's IG request (asking if we do embroidery and patches) as a customer lead when it was a vendor pitch. Rule: every DM is labeled Customer lead, Likely vendor/solicitation, Spam, or Unclear, with the reason (profile, wording, repeat messages), and only customer leads get a draft reply. Goes on Marketing's job card. This conflicts with carried card \"vendor pitches get a polite no drafted,\" which it replaces.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Logo asks get real logos, not tee designs",
+   "summary": "LBKx806, 11/21 (flagged). The YellowHouse Social \"brand directions\" were illustrated scenes and tee graphics (\"most of those are tshirt designs versus a logo\"). Rule: when you ask for a logo, deliver flat 1–2 color vector-style marks on a plain background (a lockup plus a small icon), tested at 1 inch, for embroidery, and as an avatar. Tee graphics come separately and are labeled as tee graphics. Goes on the LBKx806, Art, and Marketing cards and in the brand kit README.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Recon owns person, company, and deal investigations (confirm)",
+   "summary": "Recon, 11/20 (flagged). It handed your Megan Wheeler / Resurgent due-diligence ask to Researcher as \"not my job.\" You made Recon your private investigator, and its job card already says so (11/20). Do it means I also put it on Researcher's card and in TEAM.md routing: Recon handles investigations of people, companies, and deals you name, and Researcher keeps general topic research.",
+   "rec": "Do it."
+  },
+  {
+   "text": "Old carry cards: 24 rules from 10/26–11/09 were never sent",
+   "summary": "You OK'd re-sending them on 11/16 as in-chat tap cards, five at a time (corrections-carry-2026-11-16.md, 5 batches). No batch went out, and D1 still has no real Submit (only the 10/26 TEST row). Do it = Batch 1 (link checks, Vault first, no Printavo, gentle bulk reads, no secret dumps) goes out this week as an in-chat tap card, then one batch a week. Drop = close all 24 as no change.",
+   "rec": "Do it."
+  },
+  {
+   "text": "This week's one change: Monday lists go out as in-chat tap cards first",
+   "summary": "The hosted checklist hasn't gotten a real Submit since 10/19. Eight Monday lists (board and corrections, 10/26–11/16) sat unanswered, but the in-chat card on 11/16 got answered in 53 minutes. Doc raised this at the 11/23 board. Change: board and corrections lists go to you as in-chat tap cards (Do it / Drop plus a note), Rosey saves each answer to D1 and the correction log, and the hosted page stays as a backup link. Alt: keep the hosted page first and send an in-chat card only if there's no Submit by Tuesday noon.",
+   "rec": "Do it."
+  }
+ ]
+}
